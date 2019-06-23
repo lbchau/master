@@ -1,0 +1,17 @@
+body{
+    background-image: linear-gradient(to bottom, #fdd1003a, #ff952b3a, #ff5a553a, #e32d783a, #a228903a, #782a8d3a, #4b2a863a, #041f5f3a, #0016533a, #0011493a, #010d413a, #0301253a);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: ;
+}
+
+.container-fluid{
+    height: 1400px;
+}
+
+
+
+.col-4.text-light.p-3{
+    background-color: rgba(49, 49, 49, 0.6);
+    border-radius: 10px;
+}

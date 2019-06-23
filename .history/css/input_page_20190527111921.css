@@ -1,0 +1,16 @@
+html{
+    background: url('../images/login_img.png') no-repeat center fixed;
+    background-size: cover;
+    
+}
+
+.card{
+    height: 75%;
+    width: 60%;
+    
+}
+
+.card img{
+    height: 100px;
+
+}

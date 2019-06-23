@@ -1,0 +1,202 @@
+ <div class="form-check">
+                        <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="wake-up-early">
+                          <input type="checkbox" class="daily-check" id="wake-up">
+                          <div class="state p-on">
+                              <img class="image" src="https://img.icons8.com/dusk/64/000000/alarm-clock.png">
+                            <label>Completed!!</label>
+                          </div>
+                          <div class="state p-off p-secondary">
+                            <label>An early bird gets the worm.</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-check">
+                        <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="exercise">
+                          <input type="checkbox" class="daily-check">
+                          <div class="state p-on">
+                              <img class="image" src="https://img.icons8.com/dusk/64/000000/yoga.png">
+                            <label>Completed!!</label>
+                          </div>
+                          <div class="state p-off p-secondary">
+                            <label>A morning excercise will give you the boost for the entire day!</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-check">
+                          <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="breakfast">
+                            <input type="checkbox" class="daily-check">
+                            <div class="state p-on">
+                                <img class="image" src="https://img.icons8.com/dusk/64/000000/pancakes.png">
+                              <label>Completed!!</label>
+                            </div>
+                            <div class="state p-off p-secondary">
+                              <label>A healthy full breakfast</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-check">
+                            <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="freshen-up">
+                              <input type="checkbox" class="daily-check">
+                              <div class="state p-on">
+                                  <img class="image" src="https://img.icons8.com/dusk/64/000000/electric-toothbrush.png">
+                                <label>Completed!!</label>
+                              </div>
+                              <div class="state p-off p-secondary">
+                                <label>Freshen yourself</label>
+                              </div>
+                            </div>
+
+
+
+
+
+                            
+                                  <div class="form-check">
+                                    <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="tidy-house" >
+                                      <input type="checkbox" class="daily-check">
+                                      <div class="state p-on">
+                                          <img class="image" src="https://img.icons8.com/dusk/64/000000/housekeeping.png">
+                                        <label>Completed!!</label>
+                                      </div>
+                                      <div class="state p-off p-secondary">
+                                        <label>Makes your house spick and span!</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-check">
+                                      <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="grocery">
+                                          <input type="checkbox" class="daily-check">
+                                          <div class="state p-on">
+                                              <img class="image" src="https://img.icons8.com/dusk/64/000000/ingredients.png">
+                                            <label>Completed!!</label>
+                                          </div>
+                                          <div class="state p-off p-secondary">
+                                            <label>Check for groceries.</label>
+                                          </div>
+                                        </div>
+                                      </div>  
+                                <div class="form-check">
+                                  <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="gardening">
+                                    <input type="checkbox" class="daily-check">
+                                    <div class="state p-on">
+                                        <img class="image" src="https://img.icons8.com/dusk/64/000000/potted-plant.png">
+                                      <label>Completed!!</label>
+                                    </div>
+                                    <div class="state p-off p-secondary">
+                                      <label>Gardening for a bit.</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-check">
+                                  <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="take-a-stroll">
+                                      <input type="checkbox" class="daily-check">
+                                      <div class="state p-on">
+                                          <img class="image" src="https://img.icons8.com/dusk/64/000000/walking.png">
+                                        <label>Completed!!</label>
+                                      </div>
+                                      <div class="state p-off p-secondary">
+                                        <label>A stroll to enjoy nature.</label>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  
+                                        <div class="form-check">
+                                          <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="social" >
+                                            <input type="checkbox" class="daily-check">
+                                            <div class="state p-on">
+                                                <img class="image" src="https://img.icons8.com/dusk/64/000000/hearts.png">
+                                              <label>Completed!!</label>
+                                            </div>
+                                            <div class="state p-off p-secondary">
+                                              <label>Spend some time with your loved ones.</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      <div class="form-check">
+                                        <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="read">
+                                          <input type="checkbox" class="daily-check">
+                                          <div class="state p-on">
+                                              <img class="image" src="https://img.icons8.com/dusk/64/000000/bookmark.png">
+                                            <label>Completed!!</label>
+                                          </div>
+                                          <div class="state p-off p-secondary">
+                                            <label>Read some books</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-check">
+                                        <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="music">
+                                            <input type="checkbox" class="daily-check">
+                                            <div class="state p-on">
+                                                <img class="image" src="https://img.icons8.com/dusk/64/000000/musical-notes.png">
+                                              <label>Completed!!</label>
+                                            </div>
+                                            <div class="state p-off p-secondary">
+                                              <label>Enjoy some music</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form-check">
+                                            <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="sleep" >
+                                              <input type="checkbox" class="daily-check">
+                                              <div class="state p-on">
+                                                <img class="image" src="https://img.icons8.com/dusk/64/000000/sleeping-in-bed.png">
+                                                <label>Completed!!</label>
+                                              </div>
+                                              <div class="state p-off p-secondary">
+                                                <label>Get to bed early</label>
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+                                          
+                                        <div class="form-check">
+                                            <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="hydrate" >
+                                              <input type="checkbox" class="daily-check">
+                                              <div class="state p-on">
+                                                  <img class="image" src="https://img.icons8.com/dusk/64/000000/water.png">
+                                                <label>Completed!!</label>
+                                              </div>
+                                              <div class="state p-off p-secondary">
+                                                <label>Have plenty of water!</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="form-check">
+                                            <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="fruit" >
+                                              <input type="checkbox" class="daily-check">
+                                              <div class="state p-on">
+                                                  <img class="image" src="https://img.icons8.com/dusk/64/000000/timetable.png">
+                                                <label>Completed!!</label>
+                                              </div>
+                                              <div class="state p-off p-secondary">
+                                                <label>Keep a tight schedule</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <div class="form-check">
+                                          <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="on-time">
+                                            <input type="checkbox" class="daily-check">
+                                            <div class="state p-on">
+                                                <img class="image" src="https://img.icons8.com/dusk/64/000000/strawberry.png">
+                                              <label>Completed!!</label>
+                                            </div>
+                                            <div class="state p-off p-secondary">
+                                              <label>Get some fruits</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form-check">
+                                          <div class="pretty p-image p-round p-jelly p-bigger p-toggle daily-check" name="journal">
+                                              <input type="checkbox" class="daily-check">
+                                              <div class="state p-on">
+                                                  <img class="image" src="https://img.icons8.com/dusk/64/000000/pen.png">
+                                                <label>Completed!!</label>
+                                              </div>
+                                              <div class="state p-off p-secondary">
+                                                <label>Jot down in a journal.</label>
+                                              </div>
+                                            </div>
+                                          </div>

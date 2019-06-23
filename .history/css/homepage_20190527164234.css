@@ -1,0 +1,27 @@
+html, body{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.floating_parallax{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.floating_parallax .floating_textbox{
+    position: absolute;
+    text-align: center;
+    font-size: 10vh;
+    font-weight: bold;
+    color: black;
+    background-color:transparent;
+    border: 10px solid white;
+    display: inline;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+}
+

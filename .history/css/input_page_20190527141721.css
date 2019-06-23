@@ -1,0 +1,22 @@
+body{
+    background: url('../images/login_img.png') no-repeat center fixed;
+    background-size: cover;
+    
+}
+
+.modal-hold{
+    background: rgb(53, 53, 65);
+    margin-top: 20px;
+    opacity: 0.6;
+    z-index: inherit;
+}
+
+.modal-content{
+    margin: 70px auto;
+    padding: 0;  
+}
+
+.modal-content .avatar_holder{
+    margin: auto;
+    margin-top: -70px; 
+}

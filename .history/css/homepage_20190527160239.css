@@ -1,0 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#head_navbar{
+    transition: height 1.0s;
+    height: 0;
+}
+
+#head_navbar:hover{
+    height: 100%;
+}

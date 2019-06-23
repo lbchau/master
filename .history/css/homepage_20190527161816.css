@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-image: url('../images/home_header.png');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}

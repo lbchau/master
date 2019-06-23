@@ -1,0 +1,9 @@
+html{
+    background: url('../images/login_img.png') no-repeat center;
+    background-size: cover;
+    
+}
+
+#login_container{
+    background: rgba(0, 0, 0, 0.6);
+}

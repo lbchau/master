@@ -1,0 +1,15 @@
+html{
+    background: url('../images/login_img.png') no-repeat center fixed;
+    background-size: cover;
+    
+}
+
+body{
+    color: white;
+}
+
+#login_container{
+    display: inline;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    background-image: url('../images/home_header.png');
+}

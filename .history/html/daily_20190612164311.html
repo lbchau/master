@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>daily</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+      <link rel="stylesheet" href="../css/daily.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!--jquery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="head_navbar">
+         <!-- brand -->
+         <a class="navbar-brand" href="#">DAILY</a>
+         <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
+         <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link" href="../html/homepage.html">home<span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">daily</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Relax</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                     <a class="dropdown-item" href="#">Rain</a>
+                     <a class="dropdown-item" href="#">Forest</a>
+                  </div>
+               </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end font-weight-bold text-white">
+               <li class="nav-item">
+                  <div class="dropdown">
+                     <button class="btn btn-dark my-2 dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Me
+                     </button>
+                     <div class="dropdown-menu bg-dark text-light" aria-labelledby="triggerId">
+                        <a class="dropdown-item text-secondary" href="#"><i class="fa fa-user" aria-hidden="true"></i> User account</a>
+                        <a class="dropdown-item text-secondary" href="#"><i class="fa fa-book" aria-hidden="true"></i> Personal</a>
+                        <a class="dropdown-item text-secondary" href="#"><i class="fa fa-trophy" aria-hidden="true"></i> Achievement</a>
+                        <a class="dropdown-item text-secondary" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Setting</a>
+                        <a class="dropdown-item text-secondary btn" role="button" href="#"><i class="fa fa-adjust" aria-hidden="true"></i> Change mode</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-secondary" href="../html/login.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                     </div>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <form class="form-inline my-2 my-lg-0">
+                     <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                     <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!-- <--!start of page-->
+      <div class="bg-dark mx-auto my-5 p-3 text-white" style="width: 60%; border-radius: 30px; filter: opacity(0.7);">
+         <div class="text-center">
+            <p id="todaytitle" class="font-weight-bolder text-uppercase" style="font-family: Orbitron; font-size: 1.5rem; letter-spacing: 3px; text-shadow: 4px 4px 1px black;"></p>
+            This is a checklist for your habits throughout the day. Click on a symbol for a try!!
+         </div>
+         <nav class="nav justify-content-center text-white m-3 p-2">
+            <a class="nav-link btn btn-dark" role="button" href="#day_post"><img src="https://img.icons8.com/dusk/64/000000/sun.png">Morning</a>
+            <a class="nav-link btn btn-dark" role="button" href="#noon_post"><img src="https://img.icons8.com/dusk/64/000000/partly-cloudy-day.png">Midday</a>
+            <a class="nav-link btn btn-dark" role="button" href="#night_post"><img src="https://img.icons8.com/dusk/64/000000/fog-night.png">Evening</a>
+            <a class="nav-link btn btn-dark" role="button" href="#daily_post"><img src="https://img.icons8.com/dusk/64/000000/calendar.png">Day</a>
+         </nav>
+      </div>
+      <!-- progress bar -->
+      <!-- <div class="mx-auto sticky-top" style="width: 60%; top: 20px;">
+         <span class="mx-auto font-weight-bold my-1 text-light" style="text-shadow:3px -3px rgb(255, 53, 177),6px -2px rgb(66, 52, 255);">Progress</span>
+         <div class="progress" style="height: 25px; box-shadow: 3px -3px rgb(255, 0, 157),6px -2px rgb(25, 9, 248);"> 
+           <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" id="progressbar"
+           style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"> 0% </div>
+         </div> -->
+      <div class="progress mx-auto" style="width: 90vh; height: 20px; display: none;" id="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <!-- <div id="progress-text"></div> -->
+         </div>
+      </div>
+      <!-- daily -->
+      </div>
+      <div class="container-fluid py-5">
+         <div class="row p-4">
+            <div class="col-md-6 my-3">
+               <div class="collapse text-light" id="day_content" style="background-color: #00000077;
+                  border-radius: 10px;">
+                  <div class="container-fluid" style="display: inline;">
+                     <form action="">
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="wake-up-early" id="task-1" value="">
+                           <label for="task-1" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/sunrise.png">
+                              <div>An early bird gets the worm, they said. So how about sacrificing a tiny bit of sleep and enjoy the crisp morning.</div>
+                           </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="exercise" id="task-2" value="">
+                           <label for="task-2" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/yoga.png">
+                              <div>A morning excercise will give you the boost for the entire day!</div>
+                           </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="breakfast" id="task-3" value="">
+                           <label for="task-3" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/american-pancakes.png">
+                              <div>Breakfast is the most important meal of the day. Treat yourself!!</div>
+                           </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="freshen-up" id="task-4" value="">
+                           <label for="task-4" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/wash-your-hands.png">
+                              <div>Freshen yourself up for the upcoming hours!</div>
+                           </label>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 text-light my-3" id="day_post">
+               <img class="image-holder img-fluid" src="../images/sun.png" style="width:200px;" alt="day">
+               <h4>rise n shine</h4>
+               <div>
+                  morning is a very important part of your day. a proper preparation will go a long way for the long day ahead
+               </div>
+               <p>
+                  <a role="button" class="btn btn-dark dropdown-toggle my-2" data-toggle="collapse" href="#day_content" aria-expanded="false" aria-controls="day_content">
+                  <i class="fa fa-list-ul" aria-hidden="true"></i> Start checking away!
+                  </a>
+               </p>
+               <!-- <div class="collapse" id="day_content">
+                  <div class="container-fluid" style="display: inline;">
+                      <form action="">
+                          <div class="custom-control custom-checkbox daily-check">
+                              <input type="checkbox" class="custom-control-input daily-check" name="wake-up-early" id="task-1" value="">
+                              <label for="task-1" class="custom-control-label">
+                                  <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/sunrise.png">
+                                  <div>An early bird gets the worm, they said. So how about sacrificing a tiny bit of sleep and enjoy the crisp morning.</div>
+                              </label>
+                          </div>
+                          <div class="custom-control custom-checkbox daily-check">
+                              <input type="checkbox" class="custom-control-input daily-check" name="exercise" id="task-2" value="">
+                              <label for="task-2" class="custom-control-label">
+                                  <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/yoga.png">
+                                  <div>A morning excercise will give you the boost for the entire day!</div>
+                              </label>
+                          </div>
+                          <div class="custom-control custom-checkbox daily-check">
+                              <input type="checkbox" class="custom-control-input daily-check" name="breakfast" id="task-3" value="">
+                              <label for="task-3" class="custom-control-label">
+                                  <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/american-pancakes.png">
+                                  <div>Breakfast is the most important meal of the day. Treat yourself!!</div>
+                              </label>
+                          </div>
+                          <div class="custom-control custom-checkbox daily-check">
+                              <input type="checkbox" class="custom-control-input daily-check" name="freshen-up" id="task-4" value="">
+                              <label for="task-4" class="custom-control-label">
+                                  <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/wash-your-hands.png">
+                                  <div>Freshen yourself up for the upcoming hours!</div>
+                              </label>
+                          </div>
+                      </form>
+                  </div>
+                  </div> -->
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="container-fluid py-5">
+         <div class="row p-4">
+            <div class="col-md-6 text-light my-3 shadow" id="noon_post">
+               <img class="image-holder img-fluid" src="../images/noon.png" style="width: 300px;" alt="noon">
+               <h4>halfway there</h4>
+               <div>
+                  good afternoon! have some times to yourself for a bit of planning?
+               </div>
+               <p>
+                  <a role="button" class="btn btn-dark my-2" data-toggle="collapse" href="#noon_content" aria-expanded="false" aria-controls="noon_content">
+                  <i class="fa fa-list-ul" aria-hidden="true"></i> Some reccomended tasks
+                  </a>
+               </p>
+            </div>
+            <div class="col-md-6 my-3">
+               <div class="collapse text-light" id="noon_content" style="background-color: #00000077;
+                  border-radius: 10px;">
+                  <div class="container-fluid" style="display: inline;">
+                     <form action="">
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="tidy-house" id="task-5" value="">
+                           <label for="task-5" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/polish.png">
+                              <div>A spick and span living space is a home to come back to.</div>
+                           </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="gardening" id="task-6" value="">
+                           <label for="task-6" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/50/000000/n-gardening-plant.png">
+                              <div>Just a little plant pot is enough to lighten up the atmosphere!</div>
+                           </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="grocery" id="task-7" value="">
+                           <label for="task-7" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/shop.png">
+                              <div>Make sure your place is sufficiently stocked for the upcoming days.</div>
+                           </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="take-a-stroll" id="task-8" value="">
+                           <label for="task-8" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/bicycle.png">
+                              <div>Take some time strolling to enjoy the beautiful nature. Enjoy the fresh air!!</div>
+                           </label>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid py-5">
+         <div class="row p-4">
+            <div class="col-md-6 my-3">
+               <div class="collapse text-light" id="night_content"style="background-color: #00000077;
+                  border-radius: 10px;">
+                  <div class="container-fluid" style="display: inline;" >
+                     <form action=" ">
+                        <div class="custom-control custom-checkbox daily-check ">
+                           <input type="checkbox" class="custom-control-input daily-check " name="bath " id="task-9">
+                           <label for="task-9" class="custom-control-label ">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/towel.png ">
+                              <div>Treat yourself a nice long bath after a long day of work.</div>
+                           </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check ">
+                           <input type="checkbox" class="custom-control-input daily-check " name="social " id="task-10">
+                           <label for="task-10" class="custom-control-label ">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/trust.png ">
+                              <div>Spend sometimes with the one you love most.</div>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check ">
+                        <input type="checkbox" class="custom-control-input daily-check " name="read " id="task-11">
+                        <label for="task-11" class="custom-control-label ">
+                        <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/book-stack.png "><div>Try to see what new perspective the books can offer you. Any genres!!</div>
+                        </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check ">
+                           <input type="checkbox" class="custom-control-input daily-check " name="music " id="task-12">
+                           <label for="task-12" class="custom-control-label ">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/music.png ">
+                              <div>Let the melodies ease your mind.</div>
+                           </label>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 text-light my-3 shadow" id="night_post">
+               <img class="image-holder img-fluid" src="../images/night.png" alt="moon">
+               <h4>it's getting dark</h4>
+               <div>
+                  it's the evening, and we're home for some relaxation.
+               </div>
+               <p>
+                  <a role="button" class="btn btn-dark dropdown-toggle my-2" data-toggle="collapse" href="#night_content" aria-expanded="false" aria-controls="night_content">
+                  <i class="fa fa-list-ul" aria-hidden="true"></i> Some stuffs for chilling out
+                  </a>
+               </p>
+            </div>
+         </div>
+      </div>
+      <button id="jumpTopBtn"><img src="../images/jumpBtn.png" class="img-fluid" alt="arrow up"></button>
+      <div class="container-fluid py-5 ">
+         <div class="row p-4 ">
+            <div class="col-md-6 text-light my-3 shadow " id="daily_post">
+               <img src="../images" class="img-fluid image-holder" style="width: 300px;" alt="">
+               <h4>another day passed</h4>
+               <div>
+                  you made it through a day! let's have a recap 
+               </div>
+               <p>
+                  <a role="button" class="btn btn-dark dropdown-toggle my-2 " data-toggle="collapse" href="#daily_content" aria-expanded="false "
+                     aria-controls="daily_content ">
+                  <i class="fa fa-list-ul " aria-hidden="true "></i> Some great habits to keep
+                  </a>
+               </p>
+            </div>
+            <div class="col-md-6 my-3">
+               <div class="collapse text-light" id="daily_content" style="background-color: #00000077;
+                  border-radius: 10px;">
+                  <div class="container-fluid shadow" style="display: inline; ">
+                     <form action="">
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="full-hydrate" id="task-13" value="">
+                           <label for="task-13" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/water-glass.png">
+                              <div>Hydrate yourself throughoutly is really good for your health.</div>
+                           </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="on-time" id="task-14" value="">
+                           <label for="task-14" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/50/000000/alarm-clock.png">
+                              <div>Being on time for anything is beneficial for every parties involved!</div>
+                           </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="fruit" id="task-15" value="">
+                           <label for="task-15" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/strawberry.png">
+                              <div>Fruits are a great source of nutrients. </div>
+                           </label>
+                        </div>
+                        <div class="custom-control custom-checkbox daily-check">
+                           <input type="checkbox" class="custom-control-input daily-check" name="journal" id="task-16" value="">
+                           <label for="task-16" class="custom-control-label">
+                              <img class="icon-img" src="https://img.icons8.com/pastel-glyph/64/000000/ball-point-pen.png">
+                              <div>A quick jot down of your thoughts and ideas is a way to battle stress and keep the brain storm.</div>
+                           </label>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg invisible" data-toggle="modal" data-target="#modelId">
+      Launch
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header bg-primary text-light font-weight-bolder">
+                  <h5 class="modal-title">Congratulation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <!--gz complete-->
+                  you made it!! (ah...i ran out of idea...)
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+      </footer>
+      <!-- Optional JavaScript -->
+      <script src="../js/daily.js"></script>
+      <script src="../js/dailyquery.js"></script>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
+</html>

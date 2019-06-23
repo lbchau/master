@@ -1,0 +1,9 @@
+.fullscreen{
+    background: url('../images/login_img.png') no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+#login_container{
+    background: rgba(0, 0, 0, 0.6);
+}

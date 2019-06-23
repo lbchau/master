@@ -1,0 +1,19 @@
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-image: url('../images/header.png');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-box{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}

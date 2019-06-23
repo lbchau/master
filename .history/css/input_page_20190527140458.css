@@ -1,0 +1,22 @@
+body{
+    background: url('../images/login_img.png') no-repeat center fixed;
+    background-size: cover;
+    
+}
+
+.container{
+    background: #666;
+}
+
+.modal-content{
+    margin: 70px auto;
+    padding: 0;  
+}
+
+.modal-content .avatar_holder{
+    margin: auto;
+    margin-top: -70px;
+    height: 160px;
+    width: 160px;
+    box-shadow: 0 10px 10px 0 #666;
+}

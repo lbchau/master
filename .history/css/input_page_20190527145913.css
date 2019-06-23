@@ -1,0 +1,33 @@
+body{
+    background: url('../images/login_img.png') no-repeat center fixed;
+    background-size: cover;
+    
+}
+
+.login_box{
+    margin: 100px auto;
+    padding: 0;  
+    background-color: rgba(40, 36, 49,0.8);
+    border-radius: 20px;
+}
+
+.image-holder{
+    background: none;
+    border: none;
+}
+
+.avatar_holder{
+    margin: auto;
+    margin-top: -70px; 
+}
+
+.login_box input{
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.login_box button, a{
+    padding: 10px;
+    border-radius: 10px;
+}
+

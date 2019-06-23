@@ -1,0 +1,17 @@
+body{
+    background: url('../images/login_img.png') no-repeat center fixed;
+    background-size: cover;
+    
+}
+
+.card{
+    margin: 20px auto;
+    z-index: 1;
+    width: 60%;
+    height: 70%;
+    
+}
+
+.card-body{
+    background-color: rgba(77, 77, 77, 0.719);
+}

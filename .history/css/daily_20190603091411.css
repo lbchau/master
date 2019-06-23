@@ -1,0 +1,65 @@
+*,html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #fdd100e5, #ff952be5, #ff5a55e5, #e32d78e5, #a22890e5, #782a8de5, #4b2a86e5,#041f5fe5, #001653e5, #001149e5, #010d41e5, #010d41e5, #030125e5, #000007e5);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid{
+    margin-top: 200px;
+    height: 1000px;
+}
+
+.col-md-4.text-light.p-3{
+    background-color: rgba(49, 49, 49, 0.6);
+    border-radius: 10px;
+}
+
+.image-holder{
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    margin-top: -100px;
+}
+
+#jumpTopBtn{
+    height: 64px;
+    width: 64px;
+    margin: 20px;
+    text-align: center;
+    border:none;
+    border-radius: 50%;
+    box-shadow: 0 8px #666;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+    z-index: 10;
+    cursor: pointer;
+    animation-name: fadeinBtn;
+    animation-duration: 1s;
+    background-image: linear-gradient(rgb(251, 118, 173),rgb(93, 163, 255));
+}
+
+@keyframes fadeinBtn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#jumpTopBtn:hover{
+    background-image: linear-gradient(rgb(255, 53, 137),rgb(34, 67, 255));
+}
+
+#jumpTopBtn:active{
+    transform: translateY(4px);
+    box-shadow: 0 2px #444;
+}
+
+.form-check{
+    margin: 5px 0;
+    padding: 5px 0;
+}

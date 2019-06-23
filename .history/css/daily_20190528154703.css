@@ -1,0 +1,11 @@
+body{
+    background-image: linear-gradient(to bottom, #fdd100, #ff952b, #ff5a55, #e32d78, #a22890, #782a8d, #4b2a86, #032779, #031e69, #011659, #000e4a, #03003b);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.col-4.text-light.p-3{
+    background-color: rgba(49, 49, 49, 0.6);
+    border-radius: 10px;
+}
